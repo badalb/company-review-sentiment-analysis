@@ -1,0 +1,108 @@
+managed	2
+engineers output in decisions	1
+pays	1
+experienced professionals	1
+opinions	1
+talented experienced engineers	1
+management	1
+momentum	1
+entire organization	1
+imposed culture	1
+retrospective	1
+startup/lean culture	1
+hear about greatness	1
+process	1
+good work/life balance	1
+direction	1
+possibility	1
+bad in engineering	1
+company	1
+ways engineering	1
+business relations	1
+overall company	1
+platform	1
+sw design decisions	1
+effort	1
+scale	1
+rule	1
+scalable sw platforms	1
+shortcuts	1
+counterproductive	1
+values	1
+embraced	1
+vision	1
+many times	1
+enourmous pile	1
+have knowledge	1
+engineering	1
+flexible schedule	1
+organised events	1
+engineering structure	1
+room for improvement	1
+startup	1
+product thinking	1
+amazing	1
+lean culture	1
+great office	1
+technical aspect	1
+challenging	1
+good	1
+experience	1
+technical debt	1
+work life balance	1
+fun	1
+market strategy	1
+engineering priorities	1
+market standard	1
+non debatable top-to-bottom approach	1
+bug	1
+inner circle	1
+letting peoples	1
+practices	1
+suggest	1
+discussed	1
+decision	1
+survive	1
+software engineers	1
+demotivates/frustrates	1
+office team lunches	1
+debt stacks for ages	1
+current situation	1
+work from home	1
+visions	1
+acknowledging	1
+ad-hoc customizations	1
+shirks individuals	1
+archaic	1
+glamorous	1
+consideration since appdirect	1
+engineering organization	1
+considerable time	1
+friendly atmosphere	1
+care	1
+actions	1
+bottom style	1
+quality	1
+engineers	1
+understand	1
+work	1
+small group of engeers	1
+glassdoor review	1
+experience/terest	1
+whole team	1
+knowledge	1
+nice swags	1
+lost	1
+terms	1
+myth	1
+way appdirect	1
+reflect	1
+main product	1
+different words	1
+work environment	1
+other critical points	1
+focus	1
+responsibilities as sw engineers	1
+maintain	1
+software	1
+less involvement	1
