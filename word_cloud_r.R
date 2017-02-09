@@ -3,33 +3,43 @@
 #install.package("SnowballC") # for text stemming
 #install.packages("wordcloud") # word-cloud generator 
 #install.packages("RColorBrewer") # color palettes
+
 # Load
 library("tm")
 library("SnowballC")
 library("wordcloud")
 library("RColorBrewer")
+
 # Read the text file
-filePath <- "/Users/badalb/TravisCI/test.txt"
+filePath <- "/Users/badalb/TravisCI/company-review-sentiment-analysis/src/main/resources/output/extracted-entity-set.txt"
 text <- readLines(filePath)
+
 # Load the data as a corpus
 docs <- Corpus(VectorSource(text))
 toSpace <- content_transformer(function (x , pattern ) gsub(pattern, " ", x))
 docs <- tm_map(docs, toSpace, "/")
 docs <- tm_map(docs, toSpace, "@")
 docs <- tm_map(docs, toSpace, "\\|")
+
 # Convert the text to lower case
 docs <- tm_map(docs, content_transformer(tolower))
+
 # Remove numbers
-docs <- tm_map(docs, removeNumbers)
+	#docs <- tm_map(docs, removeNumbers)
+
 # Remove english common stopwords
-docs <- tm_map(docs, removeWords, stopwords("english"))
+	#docs <- tm_map(docs, removeWords, stopwords("english"))
+
 # Remove your own stop word
 # specify your stopwords as a character vector
-docs <- tm_map(docs, removeWords, c("blabla1", "blabla2")) 
+	#docs <- tm_map(docs, removeWords, c("blabla1", "blabla2")) 
+
 # Remove punctuations
-docs <- tm_map(docs, removePunctuation)
+	#docs <- tm_map(docs, removePunctuation)
+
 # Eliminate extra white spaces
 docs <- tm_map(docs, stripWhitespace)
+
 # Text stemming
 # docs <- tm_map(docs, stemDocument)
 dtm <- TermDocumentMatrix(docs)

@@ -102,7 +102,7 @@ public class EntityExtractor {
 //				entityList.add(entity.trim());
 //			}
 		}
-		System.out.println(entityList);
+		//System.out.println(entityList);
 		return entityList;
 	}
 
