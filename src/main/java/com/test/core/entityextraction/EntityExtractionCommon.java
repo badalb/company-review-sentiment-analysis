@@ -44,43 +44,27 @@ public class EntityExtractionCommon {
 		this.allEntityMap = (HashMap<String, Integer>) CollectionUtils.sortByValue(allEntityMap, true);
 	}
 
-//	public void writeMap() {
-//		this.sortEntityMap();
-//		List<String> entityCountList = new ArrayList<String>();
-//		for (Entry<String, Integer> entry : this.allEntityMap.entrySet()) {
-//			String entity = entry.getKey();
-//			int count = entry.getValue();
-//			String oneLine = entity + "\t" + count;
-//			entityCountList.add(oneLine);
-//		}
-//		System.out.println("FileName: " + this.allEntityFile);
-//		FileReaderWriter.write_file(entityCountList, this.allEntityFile, false);
-//	}
-	
 	public void writeMap() throws IOException {
-        CSVWriter writer = new CSVWriter(new FileWriter(this.allEntityFile),CSVWriter.DEFAULT_SEPARATOR, CSVWriter.NO_QUOTE_CHARACTER);
-//        CSVWriter writer = new CSVWriter(new FileWriter(this.allEntityFile,false),',',CSVWriter.NO_QUOTE_CHARACTER);
+		CSVWriter writer = new CSVWriter(new FileWriter(this.allEntityFile), CSVWriter.DEFAULT_SEPARATOR,
+				CSVWriter.NO_QUOTE_CHARACTER);
 
-        this.sortEntityMap();
-//        List<String> entityCountList = new ArrayList<String>();
-        List<String[]> data = new ArrayList<String[]>();
-        data.add(new String[] {"terms", "frequency"});
-//        entityCountList.add("Terms,Frequency");
-        for (Entry<String, Integer> entry : this.allEntityMap.entrySet()) {
-            String[] temp=new String[2];
-            temp[0]=entry.getKey();
-            temp[1]=entry.getValue().toString();
-            data.add(temp);
-//            String entity = entry.getKey();
-//            int count = entry.getValue();
-//            String oneLine = entity + "," + count;
-//            entityCountList.add(oneLine);
-        }
-        System.out.println("FileName: " + this.allEntityFile);
-        writer.writeAll(data);
-        writer.close();
-//        FileReaderWriter.write_file(entityCountList, this.allEntityFile, false);
-    }
+		this.sortEntityMap();
+		// List<String> entityCountList = new ArrayList<String>();
+		List<String[]> data = new ArrayList<String[]>();
+		data.add(new String[] { "terms", "frequency" });
+		// entityCountList.add("Terms,Frequency");
+		for (Entry<String, Integer> entry : this.allEntityMap.entrySet()) {
+			if (entry.getValue() > 1) {
+				String[] temp = new String[2];
+				temp[0] = entry.getKey();
+				temp[1] = entry.getValue().toString();
+				data.add(temp);
+			}
+		}
+		// System.out.println("FileName: " + this.allEntityFile);
+		writer.writeAll(data);
+		writer.close();
+	}
 
 	public String getAllEntityFile() {
 		return this.allEntityFile;

@@ -29,7 +29,7 @@ public class ReviewTextProcessor {
 	
 	private void preprocess(){
 		
-		System.out.println("Original Text :\t" + this.reviewText);
+		//System.out.println("Original Text :\t" + this.reviewText);
 		/* should not hit for 9/10 */
 		this.reviewText = this.reviewText.replaceAll("(\\w{2,})/(\\w{2,})", "$1 or $2");
 		/* If "....." exists in sentence, then replace it with . and a space */
@@ -54,7 +54,7 @@ public class ReviewTextProcessor {
 		this.reviewText = this.reviewText.replaceAll("[^\\x00-\\x7F]", "");
 		this.reviewText = this.reviewText.replaceAll("\\s+", " ");
 
-		System.out.println("Normalized Text :\t" + this.reviewText);
+		//System.out.println("Normalized Text :\t" + this.reviewText);
 	}
 	
 	private void annotateText(){
