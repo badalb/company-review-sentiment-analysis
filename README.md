@@ -1,4 +1,4 @@
-Aspect Based Sentiment Analysis
+## Aspect Based Sentiment Analysis ##
 
 This project describes aspect based sentiment analysis for review sentiment for an organization in Glassdoor.
 The source file is extracted from Glassdoor reviews and can be found at reviews.ods
@@ -12,7 +12,7 @@ The source file goes under the following changes -
 5. Sentiment Analysis - We generate entity sentiment relationship from the review text using Stanford NLP library. The entity sentiment is then classified to different classes.
 6. Sentiment Chart - Using R Script (RServe-REngine) a bar chart of entity sentiment is drawn.
 
-How to Run the Application
+# How to Run the Application
 
 1. Install R & RServe: install.packages("Rserve")
 2. In R console execute : library(Rserve)
