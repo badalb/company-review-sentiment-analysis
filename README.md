@@ -27,5 +27,7 @@ This will generate the following output
 
 1. Word Cloud
 
+![wordcloud](https://cloud.githubusercontent.com/assets/2116198/22873855/943dfade-f1e8-11e6-80cf-9474fa889a47.png)
+
 
 2. Sentiment analysis
