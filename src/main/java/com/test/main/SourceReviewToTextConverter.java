@@ -13,7 +13,7 @@ public class SourceReviewToTextConverter {
 
 	public static void convertToText() {
 		// aspectClassDictionary = new HashMap<String, List<String>>();
-		String filePath = "/Users/badalb/TravisCI/company-review-sentiment-analysis/src/main/resources/appdirect.ods";
+		String filePath = "/Users/badalb/TravisCI/company-review-sentiment-analysis/src/main/resources/reviews.ods";
 		Sheet sheet = ODSReader.readODS(new File(filePath));
 		List<String> aspectValuesList = new ArrayList<>();
 		int nRowCount = sheet.getRowCount();
