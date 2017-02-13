@@ -30,4 +30,6 @@ This will generate the following output
 ![wordcloud](https://cloud.githubusercontent.com/assets/2116198/22873855/943dfade-f1e8-11e6-80cf-9474fa889a47.png)
 
 
-2. Sentiment analysis
+2. Sentiment Analysis
+
+![review-sentiment](https://cloud.githubusercontent.com/assets/2116198/22873883/c4d8b922-f1e8-11e6-813b-8b2bcad91ff2.png)
