@@ -43,8 +43,7 @@ public class SentimentAnalyzer {
 		writer.close();
 	}
 
-	public static void main(String[] args) throws IOException {
-
+	public static void analyzeSentiment() throws IOException {
 		Map<String, OutputResult> outputMap = new HashMap<String, OutputResult>();
 		List<String> reviewList = new ArrayList<String>();
 		String inputFile = "/Users/badalb/TravisCI/company-review-sentiment-analysis/src/main/resources/input/review.txt";
@@ -93,7 +92,12 @@ public class SentimentAnalyzer {
 
 			}
 		}
-		 writeCSV(outputMap);
+		writeCSV(outputMap);
 		System.out.println(outputMap);
+	}
+
+	public static void main(String[] args) throws IOException {
+
+		analyzeSentiment();
 	}
 }

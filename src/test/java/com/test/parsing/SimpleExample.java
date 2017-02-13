@@ -1,4 +1,4 @@
-package xc;
+package com.test.parsing;
 
 import java.io.File;
 import java.io.IOException;

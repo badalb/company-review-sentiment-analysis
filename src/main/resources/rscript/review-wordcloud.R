@@ -4,6 +4,6 @@ datain <- read.csv("/Users/badalb/TravisCI/company-review-sentiment-analysis/src
 head(datain,10)
 sapply(datain, class)
 pal2 <- brewer.pal(8,"Dark2")
-png("wordcloud.png", width=3000,height=3000)
+png("/Users/badalb/TravisCI/company-review-sentiment-analysis/src/main/resources/output/wordcloud.png", width=3000,height=3000)
 wordcloud(datain$terms,datain$frequency, scale=c(7,0.5),min.freq=1, max.words=Inf, random.order=FALSE, rot.per=.25, colors=pal2)
 dev.off()

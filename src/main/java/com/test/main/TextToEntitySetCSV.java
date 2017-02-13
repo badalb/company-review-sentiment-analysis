@@ -1,5 +1,6 @@
 package com.test.main;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
@@ -14,8 +15,7 @@ import com.test.core.entityextraction.ThreadUtils;
 
 public class TextToEntitySetCSV {
 
-	public static void main(String[] args) throws Exception {
-
+	public static void createEntitySet() throws IOException {
 		ExtractionEngine.init();
 
 		EntityExtractionCommon tkEntity = new EntityExtractionCommon(null);
@@ -36,7 +36,11 @@ public class TextToEntitySetCSV {
 		System.out.println("Finished all threads");
 
 		tkEntity.writeMap();
-		return;
+	}
+
+	public static void main(String[] args) throws Exception {
+		createEntitySet();
+
 	}
 
 }
